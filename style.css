@@ -135,7 +135,9 @@ h2 {
 .how-link:hover {
   color: #1e40af;
 }
-
+.hero + .how-i-work {
+  border-top: 1px solid #e5e7eb;
+}
 /* =========================
    HOW I WORK SECTION
    ========================= */
@@ -146,6 +148,11 @@ h2 {
 }
 
 .how-i-work h3 {
+  max-width: 760px;
+  margin-left: 0;
+}
+
+.how-i-work h3 {
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 32px;
@@ -153,7 +160,7 @@ h2 {
 
 .work-block {
   max-width: 760px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 .work-block h4 {
@@ -165,7 +172,7 @@ h2 {
 
 .work-block p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: #374151;
 }
 

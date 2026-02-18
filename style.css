@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET & BASE
+   GLOBAL BASE
    ========================= */
 
 * {
@@ -14,7 +14,7 @@ body {
 }
 
 /* =========================
-   NAVBAR
+   NAVIGATION BAR
    ========================= */
 
 .navbar {
@@ -55,12 +55,6 @@ body {
   color: #1e40af;
 }
 
-/* Active tab indicator (used on other pages) */
-.nav-right a.active {
-  border-bottom: 2px solid #1e40af;
-  padding-bottom: 4px;
-}
-
 .theme-toggle {
   cursor: pointer;
   font-size: 15px;
@@ -81,7 +75,6 @@ body {
   width: 60%;
 }
 
-/* Subtle anchor under hero content */
 .hero-left::after {
   content: "";
   display: block;
@@ -115,71 +108,95 @@ h2 {
 .hook {
   font-size: 20px;
   line-height: 1.6;
-  max-width: 640px;
+  max-width: 680px;
   margin-bottom: 32px;
 }
 
 /* =========================
-   HOW I WORK LINK
+   HERO LINK
    ========================= */
 
 .how-link {
-  display: inline-block;
-  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
-  color: #374151;
+  color: #111827;
   text-decoration: none;
   letter-spacing: 0.02em;
 }
 
-.how-link:hover {
-  color: #1e40af;
+.how-link span {
+  transition: transform 0.3s ease;
 }
-.hero + .how-i-work {
-  border-top: 1px solid #e5e7eb;
+
+.how-link:hover span {
+  transform: translateX(4px);
 }
+
 /* =========================
-   HOW I WORK SECTION
+   IMPACT SECTION
    ========================= */
 
-.how-i-work {
+.impact {
   padding: 100px 80px;
   background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
 }
 
-.how-i-work h3 {
-  max-width: 760px;
-  margin-left: 0;
+.impact-text {
+  max-width: 820px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1f2933;
 }
 
-.how-i-work h3 {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 32px;
+.expertise-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #111827;
+  text-decoration: none;
 }
 
-.work-block {
-  max-width: 760px;
-  margin-bottom: 48px;
+.expertise-link span {
+  transition: transform 0.3s ease;
 }
 
-.work-block h4 {
+.expertise-link:hover span {
+  transform: translateY(4px);
+}
+
+/* =========================
+   EXPERTISE SECTION
+   ========================= */
+
+.expertise {
+  padding: 100px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 48px;
+}
+
+.expertise-item {
+  max-width: 320px;
+}
+
+.expertise-item .icon {
+  font-size: 22px;
+}
+
+.expertise-item h4 {
+  margin: 16px 0 8px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
 
-.work-block p {
-  font-size: 16px;
-  line-height: 1.65;
-  color: #374151;
-}
-
-/* =========================
-   UTILITIES
-   ========================= */
-
-.hidden {
-  display: none;
+.expertise-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
 }

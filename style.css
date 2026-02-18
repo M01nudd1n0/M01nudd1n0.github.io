@@ -36,6 +36,17 @@
   color: #1e40af;
 }
 
+/* ACTIVE TAB INDICATOR */
+.nav-right a.active {
+  border-bottom: 2px solid #1e40af;
+  padding-bottom: 4px;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .theme-toggle {
   cursor: pointer;
   font-size: 16px;

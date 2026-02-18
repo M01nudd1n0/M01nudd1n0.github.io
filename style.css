@@ -1,7 +1,4 @@
-/* =========================
-   GLOBAL BASE
-   ========================= */
-
+/* ===== BASE ===== */
 * {
   box-sizing: border-box;
 }
@@ -13,10 +10,7 @@ body {
   background: #ffffff;
 }
 
-/* =========================
-   NAVIGATION BAR
-   ========================= */
-
+/* ===== NAV ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -33,14 +27,12 @@ body {
 }
 
 .logo {
-  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
 .nav-right {
   display: flex;
-  align-items: center;
   gap: 28px;
 }
 
@@ -48,31 +40,22 @@ body {
   text-decoration: none;
   color: #374151;
   font-size: 14px;
-  letter-spacing: 0.02em;
 }
 
 .nav-right a:hover {
   color: #1e40af;
 }
 
-.theme-toggle {
-  cursor: pointer;
-  font-size: 15px;
-}
-
-/* =========================
-   HERO SECTION
-   ========================= */
-
+/* ===== HERO ===== */
 .hero {
-  display: flex;
-  align-items: center;
   min-height: 100vh;
   padding: 140px 80px 80px;
+  display: flex;
+  align-items: center;
 }
 
 .hero-left {
-  width: 60%;
+  max-width: 720px;
 }
 
 .hero-left::after {
@@ -81,49 +64,35 @@ body {
   margin-top: 48px;
   width: 48px;
   height: 2px;
-  background-color: #e5e7eb;
+  background: #e5e7eb;
 }
-
-.hero-right {
-  width: 40%;
-}
-
-/* =========================
-   TEXT HIERARCHY
-   ========================= */
 
 h1 {
   font-size: 56px;
-  font-weight: 600;
-  margin: 0 0 12px 0;
+  margin-bottom: 12px;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 28px 0;
   color: #6b7280;
+  margin-bottom: 28px;
 }
 
 .hook {
   font-size: 20px;
   line-height: 1.6;
-  max-width: 680px;
-  margin-bottom: 32px;
 }
 
-/* =========================
-   HERO LINK
-   ========================= */
-
+/* ===== HERO LINK ===== */
 .how-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  margin-top: 32px;
   font-size: 14px;
   color: #111827;
   text-decoration: none;
-  letter-spacing: 0.02em;
 }
 
 .how-link span {
@@ -134,69 +103,64 @@ h2 {
   transform: translateX(4px);
 }
 
-/* =========================
-   IMPACT SECTION
-   ========================= */
-
-.impact {
+/* ===== HOW I WORK ===== */
+.how-work {
   padding: 100px 80px;
   background: #f9fafb;
   border-top: 1px solid #e5e7eb;
 }
 
-.impact-text {
+.how-text p {
   max-width: 820px;
   font-size: 18px;
   line-height: 1.7;
-  color: #1f2933;
 }
 
-.expertise-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 40px;
+.expertise-anchor {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.expertise-anchor a {
+  text-decoration: none;
   font-size: 14px;
   color: #111827;
-  text-decoration: none;
 }
 
-.expertise-link span {
-  transition: transform 0.3s ease;
-}
-
-.expertise-link:hover span {
-  transform: translateY(4px);
-}
-
-/* =========================
-   EXPERTISE SECTION
-   ========================= */
-
+/* ===== EXPERTISE ===== */
 .expertise {
   padding: 100px 80px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 48px;
+  justify-items: center;
 }
 
-.expertise-item {
-  max-width: 320px;
+.skill {
+  text-align: center;
+  cursor: pointer;
 }
 
-.expertise-item .icon {
-  font-size: 22px;
+.skill .icon {
+  font-size: 28px;
+  margin-bottom: 8px;
 }
 
-.expertise-item h4 {
-  margin: 16px 0 8px;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.expertise-item p {
+.skill span {
   font-size: 14px;
-  line-height: 1.6;
-  color: #4b5563;
+  color: #111827;
+}
+
+/* ===== TOOLTIP ===== */
+#tooltip {
+  position: absolute;
+  background: #111827;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  max-width: 240px;
+  display: none;
+  z-index: 2000;
 }

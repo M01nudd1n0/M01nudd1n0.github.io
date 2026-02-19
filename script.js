@@ -1,18 +1,13 @@
-const tooltip = document.getElementById("tooltip");
-const skills = document.querySelectorAll(".skill");
+const toggle = document.getElementById("expertiseToggle");
+const expertise = document.getElementById("expertise");
 
-skills.forEach(skill => {
-  skill.addEventListener("mouseenter", e => {
-    tooltip.innerText = skill.dataset.info;
-    tooltip.style.display = "block";
-  });
+toggle.addEventListener("click", function (e) {
+  e.preventDefault();
 
-  skill.addEventListener("mousemove", e => {
-    tooltip.style.left = e.pageX + 15 + "px";
-    tooltip.style.top = e.pageY + 15 + "px";
-  });
+  expertise.classList.remove("hidden");
+  expertise.scrollIntoView({ behavior: "smooth" });
 
-  skill.addEventListener("mouseleave", () => {
-    tooltip.style.display = "none";
-  });
+  // Optional: prevent repeated clicks
+  toggle.style.pointerEvents = "none";
+  toggle.style.opacity = "0.6";
 });

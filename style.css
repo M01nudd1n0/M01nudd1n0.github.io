@@ -183,4 +183,8 @@ h2 {
   display: none;
   z-index: 2000;
 }
+#how-i-work,
+#expertise {
+  scroll-margin-top: 96px; /* 64px navbar + spacing */
+}
 

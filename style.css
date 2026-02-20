@@ -163,6 +163,27 @@ color: var(--text-primary);
   transform: translateY(0);
   pointer-events: auto;
 }
+/* ===== EXPERTISE ENTRY ANIMATION ===== */
+
+.expertise {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.expertise.show {
+  animation: expertiseFadeIn 0.8s ease forwards;
+}
+
+@keyframes expertiseFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* ===== SCROLL OFFSET ===== */
 #howWork,

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Moinuddin A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo" onclick="window.location.href='index.html'">MA</div>
+
+  <nav class="nav-right">
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <span class="theme-toggle">🌗</span>
+  </nav>
+</header>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact">
+
+  <div class="contact-left">
+    <h1>Let’s Talk</h1>
+
+    <p class="contact-intro">
+      If you’re working on a complex business or technology problem
+      and need structured analysis, clarity, or execution support,
+      feel free to reach out.
+    </p>
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:itsmoin.98@gmail.com">itsmoin.98@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91-7899563572</p>
+      <p><strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/m01nudd1n/" target="_blank">
+          linkedin.com/in/your-linkedin
+        </a>
+      </p>
+    </div>
+
+    <a class="cv-download" href="assets/Moinuddin_A_Resume.pdf" download>
+      Download CV
+    </a>
+  </div>
+
+  <!-- ================= SEND EMAIL BOX ================= -->
+  <div class="contact-right">
+    <h2>Send a Message</h2>
+
+    <form
+      action="mailto:moinuddin@example.com"
+      method="POST"
+      enctype="text/plain"
+    >
+      <label>
+        Your Name
+        <input type="text" name="name" required />
+      </label>
+
+      <label>
+        Your Email
+        <input type="email" name="email" required />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <button type="submit">Send Email</button>
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>

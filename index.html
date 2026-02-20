@@ -2,89 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Moinuddin A | Business Analyst</title>
+  <title>Moinuddin A | Strategic Business Architect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- NAV -->
-  <header class="navbar">
-    <div class="logo">Moinuddin</div>
-    <nav class="nav-right">
-      <a href="projects.html">Projects</a>
-      <a href="#">Background</a>
-      <a href="#">Contact</a>
-      <span class="theme-toggle">🌗</span>
-    </nav>
-  </header>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo" id="homeBtn">MA</div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>Moinuddin A</h1>
-      <h2>Business Analyst · Process Improvement · Strategy & Transformation</h2>
+  <nav class="nav-right">
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <span class="theme-toggle" id="themeToggle">🌗</span>
+  </nav>
+</header>
 
-      <p class="hook">
-        I help organizations bring clarity to complex business problems—
-        improving processes, reducing risk, and enabling better decisions at scale.
-      </p>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-center">
+    <h1>Moinuddin A</h1>
 
-      <a href="#how-i-work" class="how-link">
-        How I Create Impact <span>↘</span>
-      </a>
-    </div>
-  </section>
+    <h2>
+      Strategic Business Architect <span>|</span>
+      Delivering Data-Driven Software Excellence
+    </h2>
 
-  <!-- HOW I WORK : PARAGRAPH -->
-  <section id="how-i-work" class="how-work">
-    <div class="how-text">
+    <p class="tagline">
+      Bridging complex business vision and high-impact software delivery
+      through rigorous requirements engineering and Agile leadership.
+    </p>
+
+    <a href="#" class="primary-action" id="howWorkBtn">
+      How I Work <span>↓</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= HOW I WORK (LAYER 1) ================= -->
+<section class="how-work hidden" id="howWork">
+  <div class="how-wrapper">
+
+    <div class="how-left">
+      <h3>Who I Am</h3>
       <p>
-        I work across complex, risk-heavy environments where ambiguity,
-        scale, and operational constraints intersect.
-        My experience lies in analysing business problems,
-        aligning stakeholders, and designing process-driven solutions
-        that translate intent into execution.
-        I bring structure where clarity is missing,
-        reduce downstream risk,
-        and help organizations move from reactive fixes
-        to sustainable, informed decision-making.
+        I am a Senior Business Analyst with over five years of experience
+        operating across the full Business Change Lifecycle.
+        I specialize in translating executive-level vision into
+        structured, scalable software solutions within global
+        Agile and SDLC environments.
       </p>
+
+      <h3>My Strategic Framework</h3>
+      <ul>
+        <li>
+          <strong>Investigative Rigor:</strong>
+          Gap analysis and root-cause investigation to fully
+          understand the As-Is state before defining the To-Be.
+        </li>
+        <li>
+          <strong>Holistic Validation (POPIT):</strong>
+          Ensuring balance across people, process, and technology
+          to enable sustainable adoption.
+        </li>
+        <li>
+          <strong>Agile Governance:</strong>
+          Acting as the bridge between Product and Engineering to
+          deliver prioritized, value-driven backlogs.
+        </li>
+      </ul>
     </div>
 
- <div class="expertise-anchor">
-  <a href="#" id="expertiseToggle">Expertise ↓</a>
-</div>
-  </section>
-
-  <!-- EXPERTISE -->
-  <section id="expertise" class="expertise hidden">
-
-    <div class="skill" data-info="Aligning diverse stakeholders to establish shared understanding and informed decision-making.">
-      <div class="icon">🧭</div>
-      <span>Stakeholder Management</span>
+    <div class="expertise-trigger">
+      <a href="#" id="expertiseBtn">Expertise <span>↓</span></a>
     </div>
 
-    <div class="skill" data-info="Translating business needs into clear, structured requirements that guide delivery.">
-      <div class="icon">📄</div>
-      <span>Business Requirements</span>
-    </div>
+  </div>
+</section>
 
-    <div class="skill" data-info="Designing scalable, efficient processes that reduce operational risk and improve outcomes.">
-      <div class="icon">⚙️</div>
-      <span>Process Improvement</span>
-    </div>
+<!-- ================= EXPERTISE (LAYER 2 – COLLAPSED) ================= -->
+<section class="expertise hidden" id="expertise">
 
-    <div class="skill" data-info="Using data to identify patterns, support decisions, and measure impact.">
-      <div class="icon">📊</div>
-      <span>Business Analysis</span>
-    </div>
+  <div class="skill" data-info="Elicitation, analysis, and documentation of functional specifications, user stories, and acceptance criteria.">
+    Requirements Engineering
+  </div>
 
-  </section>
+  <div class="skill" data-info="Modeling and optimization of enterprise workflows using BPMN 2.0 and UML diagrams.">
+    Business Process Modeling
+  </div>
 
-  <!-- TOOLTIP -->
-  <div id="tooltip"></div>
+  <div class="skill" data-info="Managing complex stakeholder ecosystems using RACI / RASCI to drive alignment.">
+    Stakeholder Management
+  </div>
 
-  <script src="script.js"></script>
+  <div class="skill" data-info="SQL-driven analysis and executive dashboards using Power BI and Tableau.">
+    Data Analytics & Visualization
+  </div>
+
+  <div class="skill" data-info="Leading QA and UAT validation to ensure alignment with the original business case.">
+    Solution Validation (QA/UAT)
+  </div>
+
+</section>
+
+<!-- ================= TOOLTIP ================= -->
+<div id="tooltip"></div>
+
+<script src="script.js"></script>
 </body>
 </html>

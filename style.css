@@ -187,38 +187,22 @@ body {
   color: #1f2933;
 }
 
-/* ===== FORM ===== */
+/* ===== EMAIL CTA (NO FORM) ===== */
 
-.contact-right h2 {
-  font-size: 24px;
-  margin-bottom: 24px;
+.email-cta {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 420px;
 }
 
-form label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  margin-top: 6px;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
-  font-family: inherit;
-}
-
-form button {
-  margin-top: 24px;
-  padding: 12px 20px;
-  font-size: 14px;
+.email-button {
+  display: inline-block;
+  padding: 14px 28px;
   background: #1f2933;
   color: #ffffff;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 /* ===== RESPONSIVE ===== */

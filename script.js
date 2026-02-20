@@ -24,16 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // EXPERTISE → replace HOW I WORK
-  expBtn.addEventListener("click", e => {
-    e.preventDefault();
+ expBtn.addEventListener("click", e => {
+  e.preventDefault();
 
-    // Hide previous layer
-    howSection.classList.remove("active");
+  // Remove previous layer
+  howSection.classList.remove("active");
 
-    // Show expertise layer
-    expertise.classList.add("active");
+  // Activate expertise layer
+  expertise.classList.add("active");
 
-    expertise.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+  // Force reflow so animation triggers correctly
+  expertise.classList.remove("show");
+  void expertise.offsetWidth;
+
+  // Animate expertise in
+  expertise.classList.add("show");
+
+  expertise.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 
 });

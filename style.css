@@ -140,6 +140,20 @@ body {
 
 /* ===== UTIL ===== */
 .hidden { display: none; }
+/* ===== LAYER TRANSITIONS ===== */
+
+.layer {
+  opacity: 0;
+  transform: translateY(40px);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.layer.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
 /* ===== SCROLL OFFSET ===== */
 #howWork,
